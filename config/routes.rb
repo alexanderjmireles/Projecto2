@@ -1,11 +1,17 @@
 Rails.application.routes.draw do
-  get 'members/index'
+  get 'categories/index'
 
-  get 'members/new'
+  get 'categories/new'
 
-  get 'members/create'
+  get 'categories/create'
 
-  get 'welcome/index'
+  get "members/index" => "members#index"
+
+  get "members/new" => "memebers#new"
+
+  get "members/create" => "members#create"
+
+  get "welcome/index" => "welcome#index"
 
   get "users" => "users#index"
   get "users/new" => "users#new"
