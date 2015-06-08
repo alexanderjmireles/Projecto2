@@ -1,9 +1,20 @@
 Rails.application.routes.draw do
-  get 'categories/index'
 
-  get 'categories/new'
+  resources :categories
 
-  get 'categories/create'
+
+
+  # get "categories" => "categories#index"
+
+  # get "categories/new" => "categories#new"
+
+  # post "categories" => "categories#create"
+
+  # get "categories/:id" => "categories#show", :as :category
+
+
+  # delete "/categories/id" => "categories#destroy"
+
 
   get "members/index" => "members#index"
 
@@ -12,6 +23,7 @@ Rails.application.routes.draw do
   get "members/create" => "members#create"
 
   get "welcome/index" => "welcome#index"
+
 
   get "users" => "users#index"
   get "users/new" => "users#new"
