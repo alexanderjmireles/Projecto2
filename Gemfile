@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-ruby '2.2.1'
+gem 'ruby' '2.2.1'
 
 group :production do
   gem 'rails_12factor'
