@@ -4,6 +4,6 @@
 	<% @categories.each do |c| %>
 	<li><%= c.name %></li>
 	<li><%= link_to "show", category_path(c.id) %></li>
-	<li><%= link_to "delete", [c], method: :destoy, data: {confirm: "are you sure?"} %>
+	<li><%= link_to "delete", category_delete_path(c.id), method: :delete, data: {confirm: "are you sure?"} %>
 	<% end %>
 </ul>
